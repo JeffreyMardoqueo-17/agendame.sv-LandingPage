@@ -7,15 +7,12 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
-        if (darkMode) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
+        (darkMode) ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
+
     }, [darkMode]);
 
     return (
-        <header className="bg-white/30 dark:bg-gray-900/30 backdrop-blur-lg w-full py-4 px-8 fixed top-0 z-50">
+        <header className="bg-white/20 dark:bg-gray-900/30 backdrop-blur-lg w-full py-4 px-8 fixed top-0 z-50 text-xl">
             <nav className="flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center space-x-2">

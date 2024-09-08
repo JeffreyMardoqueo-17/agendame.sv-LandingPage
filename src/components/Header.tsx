@@ -12,7 +12,7 @@ export default function Header() {
     }, [darkMode]);
 
     return (
-        <header className="bg-white/20 dark:bg-gray-900/30 backdrop-blur-lg w-full py-4 px-8 fixed top-0 z-50 text-xl">
+        <header className="bg-transparent  backdrop-blur-sm w-full py-4 px-8 fixed top-0 z-50 text-xl">
             <nav className="flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center space-x-2">
@@ -24,8 +24,6 @@ export default function Header() {
                         Agendame
                     </span>
                 </div>
-
-
 
                 {/* Desktop navigation links */}
                 <ul className="hidden md:flex space-x-8 text-gray-600 dark:text-gray-300">
@@ -118,7 +116,6 @@ export default function Header() {
                         </svg>
                     </button>
                 </div>
-
                 {/* Mobile menu (conditionally rendered) */}
                 {isMenuOpen && (
                     <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 md:hidden">

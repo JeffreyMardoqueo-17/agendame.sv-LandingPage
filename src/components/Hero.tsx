@@ -22,7 +22,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="w-full h-screen flex items-center justify-center bg-white dark:bg-gray-900">
+        <section className="w-full h-screen flex items-center justify-center bg-bgligth dark:bg-bgdark">
             {/* Left Section */}
             <div className="w-1/2 flex flex-col justify-center items-start p-8 space-y-4">
                 <h1 className="text-6xl font-bold text-blue-800">Agendame <span className="text-7xl">SV</span></h1>
